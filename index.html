@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyMap</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoxuKbl-hjeqiD_MjDzbY0WyjlrWHL11U&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      #map {
+        height: 700px;
+        width: 75%;
+    </style>
+
+    <script>
+      "use strict";
+
+      let map;
+
+      function initMap() {
+
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: {
+            lat: 48.854569, 
+            lng: 37.724961,
+          },
+          zoom: 11,
+        });
+
+        var marker = new google.maps.Marker({
+  			position: {lat: 48.897977, lng: 37.768945,},
+  			map: map
+});
+        var marker = new google.maps.Marker({
+  			position: {lat: 48.849679, lng: 37.786610,},
+  			map: map
+});
+        var marker = new google.maps.Marker({
+  			position: {lat: 48.862379, lng: 37.760931,},
+  			map: map
+});
+        var marker = new google.maps.Marker({
+  			position: {lat: 48.903427, lng: 37.821724,},
+  			map: map
+});
+         var marker = new google.maps.Marker({
+  			position: {lat: 48.745496, lng: 37.602827,},
+  			map: map
+});
+      }
+    </script>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+</html>
